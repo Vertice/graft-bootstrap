@@ -1,0 +1,39 @@
+{
+  "name": "graft-bootstrap",
+  "version": "0.0.1",
+  "description": "bootstrap assets for graft",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "author": "Adrian Rossouw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ONCHoldings/graft-bootstrap/issues"
+  },
+  "peerDependencies": {
+    "graftjs": "~0.0.1",
+    "backbone": "1.0.x",
+    "underscore": "1.5.x",
+    "mocha": "~1.12.0",
+    "debug": "~0.7.2",
+    "should": "~1.2.2",
+    "backbone.marionette": "~1.0.4"
+  },
+  "devDependencies": {
+    "backbone": "1.0.x",
+    "graftjs": "git+ssh://git@github.com:ONCHoldings/graft.js.git#master",
+    "underscore": "1.5.x",
+    "mocha": "~1.12.0",
+    "debug": "~0.7.2",
+    "should": "~1.2.2",
+    "backbone.marionette": "~1.0.4",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "less-middleware": "~0.1.12",
+    "bootstrap": "git+https://github.com/twitter/bootstrap.git#v2.3.2",
+    "express": "~3.0.0"
+  }
+}
