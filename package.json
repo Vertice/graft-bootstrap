@@ -29,7 +29,8 @@
     "should": "~1.2.2",
     "backbone.marionette": "~1.0.4",
     "grunt-contrib-jshint": "~0.6.0",
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "request": "~2.25.0"
   },
   "dependencies": {
     "less-middleware": "~0.1.12",
