@@ -7,7 +7,6 @@ var testPort = 8405;
 
 describe('bootstrap static middleware', function() {
     before(function() {
-
         require('../index.js');
         Graft.start({port: testPort});
     });
@@ -45,4 +44,5 @@ describe('bootstrap static middleware', function() {
             this.body.should.include('http://twitter.github.com/bootstrap/');
         });
     });
+    describe('stop server', utils.stopServer);
 });
