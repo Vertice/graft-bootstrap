@@ -78,6 +78,17 @@ describe('bootstrap less middleware', function() {
         it('should have imported external bootstrap.less', function() {
             this.body.should.include('filename: /node_modules/bootstrap/less/bootstrap.less');
         });
+        it('should have loaded the local override', function() {
+            this.body.should.include('filename: /assets/less/variables.less');
+        });
+        it('should have loaded the external override', function() {
+            this.body.should.include('filename: /node_modules/bootstrap/less/variables.less');
+        });
+        it('should only have used the last included variables', function() {
+            this.body.should.include('external-color: #0000ff');
+            this.body.should.include('bootstrap-color: #0000ff');
+        });
+
     });
 
     describe('stop server', utils.stopServer);

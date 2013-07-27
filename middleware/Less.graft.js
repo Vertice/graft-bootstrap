@@ -9,14 +9,10 @@ var _express = express();
 this.express = _express;
 _.extend(this, _express);
 
+require('../index.js'); // needed for the static routes
+
 this.addInitializer(function(opts) {
-    var config = opts && opts.bootstrap || {};
-
-    _.defaults(config, {
-        publicPath: path.join(process.cwd(), 'assets'),
-        bootstrapPath: path.dirname(require.resolve('bootstrap/package.json'))
-    });
-
+    var config = Graft.request('config:bootstrap', opts);
     var paths = _(Graft.directories).map(function(dir) {
         return path.join(dir, 'assets', 'less');
     });
