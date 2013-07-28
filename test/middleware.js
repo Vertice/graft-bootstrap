@@ -7,7 +7,7 @@ var testPort = 8405;
 
 describe('bootstrap static middleware', function() {
     before(function() {
-        require('../index.js');
+        require('../server.js');
         Graft.start({port: testPort});
     });
     describe('should give me the bootstrap css', function() {

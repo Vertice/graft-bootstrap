@@ -2,7 +2,7 @@
   "name": "graft-bootstrap",
   "version": "0.0.1",
   "description": "bootstrap assets for graft",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha -R spec"
   },

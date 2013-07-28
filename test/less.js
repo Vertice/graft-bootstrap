@@ -10,7 +10,7 @@ describe('bootstrap less middleware', function() {
     before(function() {
         process.chdir(__dirname + '/fixture');
 
-        require('../index.js');
+        require('../server.js');
         require('../middleware/Less.graft.js');
 
         var bootstrap = {
