@@ -1,6 +1,6 @@
+[![Build Status](https://magnum.travis-ci.com/ONCHoldings/graft-bootstrap.png?token=b72mqMfgb1GT7zp1RCu1&branch=master)](https://magnum.travis-ci.com/ONCHoldings/graft-bootstrap)
 graft-bootstrap
 ---------------
-[![Build Status](https://magnum.travis-ci.com/ONCHoldings/graft-bootstrap.png?token=b72mqMfgb1GT7zp1RCu1&branch=master)](https://magnum.travis-ci.com/ONCHoldings/graft-bootstrap)
 
 This project provides a clean dependency for building a graftjs
 site using bootstrap as a visual base layer.
