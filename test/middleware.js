@@ -1,13 +1,13 @@
 /*jshint unused:false*/
 var Graft    = require('graftjs/server');
-var utils    = require('graftjs/test/utils.js');
+var utils    = require('graftjs/test/utils');
 var should   = require('should');
 var _        = require('underscore');
 var testPort = 8405;
 
 describe('bootstrap static middleware', function() {
     before(function() {
-        require('../server.js');
+        require('../server');
         Graft.start({port: testPort});
     });
     describe('should give me the bootstrap css', function() {

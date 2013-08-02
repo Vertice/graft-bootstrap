@@ -6,12 +6,12 @@ var _        = require('underscore');
 var testPort = 8406;
 var cwd = process.cwd();
 
-describe('bootstrap less middleware', function() {
+describe('bootstrap less server', function() {
     before(function() {
         process.chdir(__dirname + '/fixture');
 
-        require('../server.js');
-        require('../middleware/Less.graft.js');
+        require('../server');
+        require('../server/Less.graft.js');
 
         var bootstrap = {
             bootstrapPath: __dirname + '/fixture/node_modules/bootstrap',

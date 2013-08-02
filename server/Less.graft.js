@@ -9,7 +9,7 @@ var _express = express();
 this.express = _express;
 _.extend(this, _express);
 
-require('../server.js'); // needed for the static routes
+require('../server'); // needed for the static routes
 
 this.addInitializer(function(opts) {
     var config = Graft.request('config:bootstrap', opts);
