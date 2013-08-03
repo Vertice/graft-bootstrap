@@ -1,6 +1,6 @@
 /*jshint unused:false*/
 var Graft    = require('graftjs/server');
-var utils    = require('graftjs/test/utils.js');
+var utils    = require('graftjs/test/utils');
 var should   = require('should');
 var _        = require('underscore');
 var testPort = 8406;
@@ -11,7 +11,7 @@ describe('bootstrap less server', function() {
         process.chdir(__dirname + '/fixture');
 
         require('../server');
-        require('../server/Less.graft.js');
+        require('../server/less');
 
         var bootstrap = {
             bootstrapPath: __dirname + '/fixture/node_modules/bootstrap',
