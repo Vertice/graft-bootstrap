@@ -12,6 +12,7 @@ _.extend(this, _express);
 require('../server'); // needed for the static routes
 
 this.addInitializer(function(opts) {
+    debug('config bootstrap');
     var config = Graft.request('config:bootstrap', opts);
     var paths = _(Graft.directories).map(function(dir) {
         return path.join(dir, 'assets', 'less');

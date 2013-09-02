@@ -15,6 +15,7 @@ Graft.reqres.setHandler('config:bootstrap', function(opts) {
         bootstrapPath : path.dirname(require.resolve('bootstrap/package.json'))
     });
 
+    debug('config:bootstrap', config.publicPath, config.bootstrapPath);
     return config;
 });
 
