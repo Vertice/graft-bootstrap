@@ -19,7 +19,7 @@ Graft.reqres.setHandler('config:bootstrap', function(opts) {
     return config;
 });
 
-Graft.on('after:mount:static', function(opts) {
+Graft.Server.on('after:mount:static', function(opts) {
     debug('mounting bootstrap assets');
     var config = Graft.request('config:bootstrap', opts);
 

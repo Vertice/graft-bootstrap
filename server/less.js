@@ -30,7 +30,7 @@ this.addInitializer(function(opts) {
 });
 
 
-Graft.on('before:mount:static', function(opts) {
+Graft.Server.on('before:mount:static', function(opts) {
     debug('Mounting less path');
     Graft.use(this);
 }, this);
