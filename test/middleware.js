@@ -41,7 +41,7 @@ describe('bootstrap static middleware', function() {
             this.resp.should.have.header('content-type', 'application/javascript');
         });
         it('should be the right contents', function() {
-            this.body.should.include('filename: /node_modules/bootstrap/js/bootstrap.js');
+            this.body.should.include('filename: /node_modules/bootstrap/dist/js/bootstrap.js');
         });
     });
     describe('should give me the bootstrap icon', function() {

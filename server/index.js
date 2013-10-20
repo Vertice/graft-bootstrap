@@ -24,6 +24,6 @@ Graft.Server.on('after:mount:static', function(opts) {
     var config = Graft.request('config:bootstrap', opts);
 
     this.use('/assets/css', express.static(__dirname + '/assets/css'));
-    this.use('/assets/js', express.static(config.bootstrapPath + '/js'));
+    this.use('/assets/js', express.static(config.bootstrapPath + '/dist/js'));
     this.use('/assets/img', express.static(config.bootstrapPath + '/img'));
 }, Graft);
