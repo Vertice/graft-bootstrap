@@ -11,15 +11,6 @@
   "bugs": {
     "url": "https://github.com/ONCHoldings/graft-bootstrap/issues"
   },
-  "peerDependencies": {
-    "graftjs": "~0.0.1",
-    "backbone": "1.0.x",
-    "underscore": "1.5.x",
-    "mocha": "~1.12.0",
-    "debug": "~0.7.2",
-    "should": "~1.2.2",
-    "backbone.marionette": "~1.1.0"
-  },
   "devDependencies": {
     "backbone": "1.0.x",
     "graftjs": "git://github.com/ONCHoldings/graft.js.git#master",
@@ -33,7 +24,7 @@
     "request": "~2.25.0"
   },
   "dependencies": {
-    "less-middleware": "~0.1.12",
+    "less-middleware": "0.1.12",
     "bootstrap": "git://github.com/twbs/bootstrap.git#v3.0.0",
     "express": "~3.0.0"
   }
